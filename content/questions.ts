@@ -1,0 +1,27 @@
+export const questions = [
+    { question: "What’s your favorite aspect of working in a team? / ما هو aspect المفضل لديك في العمل ضمن فريق؟", options: ["Collaboration / التعاون", "Innovation / الابتكار", "Support / الدعم", "Learning / التعلم"] },
+    { question: "What type of work environment do you thrive in? / ما هو نوع بيئة العمل التي تزدهر فيها؟", options: ["Remote / عن بُعد", "Office / في المكتب", "Hybrid / هجينة", "Flexible / مرنة"] },
+    { question: "What’s your preferred method of communication at work? / ما هي طريقة التواصل المفضلة لديك في العمل؟", options: ["Email / البريد الإلكتروني", "Instant Messaging / الرسائل الفورية", "Phone Calls / المكالمات الهاتفية", "Video Calls / المكالمات الفيديو"] },
+    { question: "What kind of colleagues do you enjoy working with? / ما هو نوع الزملاء الذين تستمتع بالعمل معهم؟", options: ["Creative / مبدعون", "Analytical / تحليليون", "Supportive / داعمون", "Driven / مبادرون"] },
+    { question: "What’s your favorite way to unwind after a busy day? / ما هي طريقتك المفضلة للاسترخاء بعد يوم شاق؟", options: ["Reading a book / قراءة كتاب", "Going for a walk / الذهاب للمشي", "Watching a movie / مشاهدة فيلم", "Listening to music / الاستماع للموسيقى"] },
+    { question: "If you could have any superpower, what would it be? / إذا كان بإمكانك الحصول على أي قوة خارقة، ما هي؟", options: ["Teleportation / الانتقال الفوري", "Invisibility / الاختفاء", "Super Strength / القوة الخارقة", "Telepathy / قراءة الأفكار"] },
+    { question: "What’s your go-to karaoke song? / ما هي أغنيتك المفضلة في الكاريوكي؟", options: ["Bohemian Rhapsody / Bohemian Rhapsody", "Shake It Off / Shake It Off", "Sweet Caroline / Sweet Caroline", "Uptown Funk / Uptown Funk"] },
+    { question: "What’s a hobby you’ve always wanted to pick up? / ما هو هواية كنت دائمًا ترغب في تعلمها؟", options: ["Painting / الرسم", "Gardening / الزراعة", "Surfing / ركوب الأمواج", "Rock Climbing / التسلق"] },
+    { question: "What’s your favorite book or movie genre? / ما هو نوع الكتب أو الأفلام المفضل لديك؟", options: ["Science Fiction / الخيال العلمي", "Fantasy / الفانتازيا", "Romance / الرومانسية", "Thriller / الإثارة"] },
+    { question: "If you could visit any place in the world, where would it be? / إذا كان بإمكانك زيارة أي مكان في العالم، أين سيكون؟", options: ["Paris / باريس", "Tokyo / طوكيو", "New York / نيويورك", "Sydney / سيدني"] },
+    { question: "What’s your favorite way to spend a weekend? / ما هي طريقتك المفضلة لقضاء عطلة نهاية الأسبوع؟", options: ["Exploring new places / استكشاف أماكن جديدة", "Relaxing at home / الاسترخاء في المنزل", "Hanging out with friends / قضاء الوقت مع الأصدقاء", "Trying new recipes / تجربة وصفات جديدة"] },
+    { question: "What’s a skill you’d like to learn? / ما هو المهارة التي ترغب في تعلمها؟", options: ["Photography / التصوير", "Cooking / الطبخ", "Coding / البرمجة", "Playing an instrument / العزف على آلة موسيقية"] },
+    { question: "What’s your favorite holiday and why? / ما هي عطلتك المفضلة ولماذا؟", options: ["Christmas / عيد الميلاد", "Halloween / الهالوين", "Thanksgiving / عيد الشكر", "Easter / عيد الفصح"] },
+    { question: "What’s your favorite outdoor activity? / ما هي نشاطك الخارجي المفضل؟", options: ["Hiking / المشي", "Cycling / ركوب الدراجات", "Swimming / السباحة", "Picnicking / النزهات"] },
+    { question: "What’s your go-to comfort food? / ما هي طعام الراحة المفضل لديك؟", options: ["Pizza / البيتزا", "Ice Cream / الآيس كريم", "Chocolate / الشوكولاتة", "Mac and Cheese / المكرونة بالجبن"] },
+    { question: "Do you prefer mornings or evenings? / هل تفضل الصباح أم المساء؟", options: ["Mornings / الصباح", "Evenings / المساء", "Both / كلاهما", "Neither / لا شيء"] },
+    { question: "What’s your favorite season and why? / ما هي فصلك المفضل ولماذا؟", options: ["Spring / الربيع", "Summer / الصيف", "Fall / الخريف", "Winter / الشتاء"] },
+    { question: "What’s one thing you can’t live without? / ما هو شيء لا يمكنك العيش بدونه؟", options: ["Coffee / القهوة", "Books / الكتب", "Music / الموسيقى", "Technology / التكنولوجيا"] },
+    { question: "What’s your favorite board game or card game? / ما هي لعبة الطاولة أو لعبة الورق المفضلة لديك؟", options: ["Monopoly / مونوبولي", "Scrabble / سكرابيل", "Poker / البوكر", "Uno / أونو"] },
+    { question: "What’s a cause you’re passionate about? / ما هو قضية التي أنت شغوف بها؟", options: ["Environmental conservation / الحفاظ على البيئة", "Animal rights / حقوق الحيوانات", "Education / التعليم", "Health / الصحة"] },
+    { question: "What’s your favorite way to stay active? / ما هي طريقتك المفضلة للبقاء نشطًا؟", options: ["Running / الجري", "Yoga / اليوغا", "Dancing / الرقص", "Weightlifting / رفع الأثقال"] },
+    { question: "What’s a movie or TV show you could watch over and over again? / ما هو فيلم أو برنامج تلفزيوني يمكنك مشاهدته مرارًا وتكرارًا؟", options: ["Friends / الأصدقاء", "The Office / المكتب", "Inception / البداية", "The Shawshank Redemption / خروج شاوشانك"] },
+    { question: "What’s a talent you wish you had? / ما هو موهبة التي تتمنى لو كنت تمتلكها؟", options: ["Singing / الغناء", "Dancing / الرقص", "Drawing / الرسم", "Public speaking / الخطابة العامة"] },
+];
+
+

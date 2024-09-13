@@ -2,23 +2,11 @@
 import { ChangeEvent, FormEvent, useState, useEffect } from "react";
 import { db } from "../firebase";
 import { questions } from "@/content/questions";
-import {
-  doc,
-  setDoc,
-  collection,
-  query,
-  getDocs,
-  onSnapshot,
-} from "firebase/firestore";
+import { doc, setDoc, collection, query, onSnapshot } from "firebase/firestore";
 
-// types/models.ts
-export interface Question {
-  question: string;
-  options: string[];
-}
 
 interface Answers {
-  [key: string]: any; // Adjust the type based on your answers structure
+  [key: string]: string; 
 }
 
 interface Teammate {
@@ -32,7 +20,7 @@ const calculateMatchScore = (
 ) => {
   let score = 0;
 
-  for (let key in person1Answers) {
+  for (const key in person1Answers) {
     if (person1Answers[key] === person2Answers[key]) {
       score++;
     }
@@ -46,6 +34,7 @@ const findBestMatches = (
   answers: Answers,
   teamMates: Teammate[]
 ) => {
+  console.log(name);
   const scores = teamMates.map((teammate) => ({
     name: teammate.name,
     score: calculateMatchScore(answers, teammate.answers),
@@ -128,14 +117,15 @@ export default function Main() {
             Discover Your Ideal Teammates LOL
           </h1>
           <p className="text-lg text-gray-700">
-            Answer these questions to find out who you'll enjoy working with the
-            most. Dive in and get to know your future team!
+            {
+              "  Answer these questions to find out who you'll enjoy working with the most. Dive in and get to know your future team!"
+            }
           </p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4 p-4">
           <div className="grid">
-            <label className="text-lg font-semibold">User name</label>
+            <label className="text-lg font-semibold">Name</label>
             <input
               placeholder="User Name"
               className="h-[45px] border rounded-lg bg-white p-2"
@@ -176,8 +166,8 @@ export default function Main() {
             ) : (
               <div className="flex border rounded-xl p-4 bg-white shadow-lg flex-col">
                 <em>
-                  Based on everyone's answers, the best match(es) for {userName}{" "}
-                  would be: {bestMatches.join(", ")}
+                  Based on everyone&apos;s answers, the best match(es) for{" "}
+                  {userName} would be: {bestMatches.join(", ")}
                 </em>
               </div>
             )}

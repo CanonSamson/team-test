@@ -4,9 +4,8 @@ import { db } from "../firebase";
 import { questions } from "@/content/questions";
 import { doc, setDoc, collection, query, onSnapshot } from "firebase/firestore";
 
-
 interface Answers {
-  [key: string]: string; 
+  [key: string]: string;
 }
 
 interface Teammate {
@@ -185,7 +184,7 @@ export default function Main() {
               type="button"
               className="border-blue-500 rounded-full border  text-blue-500 p-2 "
             >
-              Find Best Matches
+              Discover Now
             </button>
           </div>
         </form>
